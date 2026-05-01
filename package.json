@@ -1,0 +1,16 @@
+{
+  "name": "bun-win-import.meta.main-bug",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "build-shell": "bun build --compile --target=bun-windows-x64 --outfile=./dist/win-shell.exe",
+    "build-lib": "bun ./scripts/build.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
