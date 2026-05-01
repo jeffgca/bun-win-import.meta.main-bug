@@ -7,7 +7,7 @@
     "@types/bun": "latest"
   },
   "scripts": {
-    "build-shell": "bun build --compile --target=bun-windows-x64 --outfile=./dist/win-shell.exe",
+    "build-shell": "bun build --compile --target=bun-windows-x64 --outfile=./dist/win-shell.exe ./index.ts",
     "build-lib": "bun ./scripts/build.ts"
   },
   "peerDependencies": {
