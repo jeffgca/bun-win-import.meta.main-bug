@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build-shell": "bun build --compile --target=bun-windows-x64 --outfile=./dist/win-shell.exe ./index.ts",
-    "build-lib": "bun ./scripts/build.ts"
+    "build-lib": "bun ./scripts/build.ts",
+    "cc": "bun run build-shell && bun run build-lib"
   },
   "peerDependencies": {
     "typescript": "^5"
